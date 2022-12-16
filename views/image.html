@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
     <title>Nhom07_FaceRecognition</title>
     <style type="text/css">
         #container{
@@ -31,18 +32,19 @@
             <li class="current"><a href="./image.html" data-hover="IMAGE">IMAGE</a></li>
             <li><a href="./video.html" data-hover="VIDEO">VIDEO</a></li>
             <li><a href="./realtime.html" data-hover="LIVE">LIVE</a></li>
+            <li><a href="./login.html" data-hover="LOGOUT">LOGOUT</a></li>
         </ul>
         <br>
         <br>
-        <input type="file" id="fileInput"/>
+        <input type="file" id="fileInput" accept="image/*"/>
         <div id="container"></div>
         
         
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.js" 
-        integrity="sha256-JOJ7NmVm2chxYZ1KPcAYd2bwVK7NaFj9QKMp7DClews=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-    <script src="../scrips_image.js"></script>
+    <script src="../face-api.min.js"></script>
+    <script src="../xuli/scrips_image.js"></script>
+
 </body>
 </html>

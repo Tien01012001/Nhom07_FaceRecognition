@@ -7,8 +7,7 @@
     <title>Nhom07_FaceRecognition</title>
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.js" 
-        integrity="sha256-JOJ7NmVm2chxYZ1KPcAYd2bwVK7NaFj9QKMp7DClews=" crossorigin="anonymous"></script>
+   
 
         
 </head>
@@ -19,18 +18,19 @@
         <li><a href="./image.html" data-hover="IMAGE">IMAGE</a></li>
         <li><a href="./video.html" data-hover="VIDEO">VIDEO</a></li>
         <li class="current"><a href="./realtime.html" data-hover="LIVE">LIVE</a></li>
+        <li><a href="./login.html" data-hover="LOGOUT">LOGOUT</a></li>
     </ul>
     <br>
     <br>
-    <video src="" autoplay="true" id="realtime"></video>
+    <video src="" autoplay="true" id="realtime" ></video>
     <div id="containerRealtime"></div>
     </div>
 
    
     
 
-
-    <script src="../scripts_live.js" defer></script>
+    <script src="../face-api.min.js" defer></script>
+    <script src="../xuli/scrips_live.js" defer></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>

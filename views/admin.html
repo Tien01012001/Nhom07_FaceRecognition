@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    
+    <title>Nhom07_FaceRecognition</title>
+    <style type="text/css">
+        #containerAdmin{
+            width: 100%;
+            position: relative;;
+        }
+        #containerAdmin text{
+            font-size: 50px;
+
+        }
+        #containerAdmin img{
+            margin-top: 5px;
+            width: 180px;
+            height: 180px;
+        }
+        #containerAdmin canvas{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="snip1143">
+            <li><a href="" data-hover="ADMIN">ADMIN</a></li>
+            <li><a href="./login.html" data-hover="LOGOUT">LOGOUT</a></li>
+        </ul>
+        <br>
+        <br>
+        <select id="mySelect">
+        </select>
+        <div id="containerAdmin"></div>
+        <button id="add">Add</button>
+        <button id="delete" onclick="setTimeout(myFunction, 5000)">Delete</button>
+        <input type="file" id="fileImage" accept="image/*"/>
+        
+        <script>
+            function myFunction() {
+              var x = document.getElementById("mySelect");
+              x.remove(x.selectedIndex);
+            }
+        </script>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.js" 
+        integrity="sha256-JOJ7NmVm2chxYZ1KPcAYd2bwVK7NaFj9QKMp7DClews=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="../xuli/scrips_admin.js"></script>
+    
+</body>
+</html>
+
